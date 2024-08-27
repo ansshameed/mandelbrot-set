@@ -1,0 +1,69 @@
+Contact Details:
+- E-mail 1: ansshameed@icloud.com
+- E-mail 2: 191573@student.stbrn.ac.uk
+
+NEA Mandelbrot Controls:
+
+1. Up Arrow Key  = Increase zoom scale
+2. Down Arrow Key = Decrease zoom scale
+3. Mouse Right Click = Zoom in
+4. Backspace = Zoom out
+5. Spacebar = Prints mouse position
+6. 's' key = Saves fractal image current on screen 
+
+WARNINGS: 
+- Maximum Iteration values above 500 have significantly high processing time
+- Larger the window size, the larger the processing time: O(n^2) - exponential big O time and space complexity 
+
+NEA Mandelbrot Usage:
+Main menu: 
+
+- Click 'Login' to login if you have an existing account
+
+- Click 'Register' if you wish to make an account
+    --> Extra Details: 
+	- Email address must be of a valid FORMAT 
+	  --> ***@***.*****
+	- Username must be equal to or less than 20 characters
+	- Password must be 8 characters minimum and contain an uppercase letter
+	- Password confirmation must match initial password given 
+
+- Click 'Guest' if you wish to access the visulisation tool directly
+
+- Click 'RGB Slider' if you wish to test out different colours and perhaps change the RGB values manually in the source code 
+
+Glossary:
+- Benoit Mandelbrot = Polish-born French American Mathematician also known as the 'father of fractals' 
+
+- Fractal = A never-ending, infinitely complex patterns that are self similar across different scales
+
+- Mandelbrot set fractal = It is a general class of fractal. It is the set of complex numbers of which the function does not diverge when iterated. It remaind bounded in absolute value. Closely associated with the Julia set 
+
+- Julia set fractal = The smallest closed set containing at least 3 points which is invariant under constant f. Strong association with the Mandelbrot set. 
+
+- Mandelbrot set equation: z = z*z + c (normalised iteration count) 
+
+- Maximum Iterations = Used to determine whether the point is within the Mandelbrot set. If it is not, then the fractal is coloured black in certain places. If the point goes out to infinity, it is outside of the set, and if the point stays near 0, its near the set. It is the maximum number of iterations for which points are plotted
+
+- Image Dimensions = HeightxWidth of the fractal image in pygame
+
+- Themes = Colour themes selected: Default, Fire, Emerald, Ocean
+
+- Scaling Speed = Rate at which the zooming rectangular can expand or shrink in size
+
+- Smooth (Continuous) Colouring = The bands inconsistent bands of colour in the image are rendered to become a consistent colour with bands of colours being less prominent in the fractal. Calculated using the 'linear interpolation' and 'potential function'
+
+- Histogram Colouring = Uses a standard Histogram which pairs ach pixel with the pixel's iteration count. The method will distribute colours to the same overall fractal area and it is independent of the maximum iteration count chosen - it is dependent on each pixel's maximum iteration count (Used in default colouring theme) 
+
+- Linear interpolation = Statistical Mathematical 'method of curve fitting using linear polynomails to construct new data points within the range of discrete known data points.' In this case, it is used to plot the x and y complex pixels on the coordinate plane of the Mandelbrot Set
+
+- PyGame = It is a Python wrapper for SDL written by Pete Shinners. Used as a module in python for writing games and other multimedia applciations in Python that (Mandelbrot Set Fractal Tool). 
+
+- TKinter = Standard GUI (Graphical User Interface) for Python 
+
+- RGB = RedGreenBlue. Used to manipulate and test out colours using 3 different colour channels of red, green and blue. In this case, you can access the RGB slider to test out different colours if you wish to change colours of the fractal manually in the source code distributed of this program. 
+
+- Stack = LIFO ADT (Abstract Data Type) used in Computer Science programming for efficient uses and operations of lists and arrays dynamically in Python using a linked list to push and pop items from the stack. This is used in this program to push the item onto the stack when the user wishes to zoom into the fractal (mouse click)  and pop the item when the user requests to zoom out (backspace button) 
+
+
+
